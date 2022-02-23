@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary  */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  color: var(--Dark-Grayish-Blue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header,
+section {
+  padding: 0 2rem;
+}
+
+/* Header  */
+header {
+  background: url("./images/bg-header-mobile.png") no-repeat;
+  background-position: top center;
+  padding-top: 15rem;
+}
+
+.header-logo {
+  margin-bottom: 5rem;
+}
+
+h1 {
+  padding-bottom: 2rem;
+}
+
+.header-para {
+  padding-bottom: 5rem;
+}
+
+.download-btn {
+  border: none;
+  color: white;
+  font-family: inherit;
+  border-radius: 50px;
+  font-size: inherit;
+  width: 100%;
+  max-width: 350px;
+  font-weight: 600;
+  padding: 15px 30px;
+  margin-bottom: 3rem;
+}
+
+.ios-btn {
+  background: var(--Strong-Cyan);
+  box-shadow: 0px 4px hsl(171, 66%, 38%);
+}
+
+.mac-btn {
+  background: var(--Light-Blue);
+  box-shadow: 0px 4px hsl(233, 67%, 60%);
+}
+
+/* main  */
+main > * {
+  margin-bottom: 10rem;
+}
+
+.section-heading {
+  padding-bottom: 2rem;
+}
+
+.section-para {
+  padding-bottom: 4rem;
+}
+
+.snippet-features {
+  margin: 5rem auto;
+}
+
+.snippet-features p {
+  margin-bottom: 3rem;
+}
+
+/* Workflow container  */
+.workflow-container {
+  margin: 5rem auto;
+}
+
+.workflow-container > * {
+  padding-block: 3rem;
+}
+
+.workflow-container h3 {
+  padding-block: 2rem;
+}
+
+/* Firms section  */
+.firms-section > * {
+  padding-block: 3rem;
+}
+
+/* Footer  */
+footer {
+  background: #eee;
+  padding: 5rem 0 0;
+}
+
+.footer-logo {
+  width: 60px;
+  padding-bottom: 1rem;
+}
+
+.links ul > * {
+  padding-block: 2rem;
+}
+
+.socials {
+  margin-block: 3rem;
+}
+
+.socials li,
+.social a {
+  display: inline-block;
+  margin-inline: 2rem;
+}
+
+@media screen and (min-width: 376px) {
+  header {
+    background-image: url("./images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header-container {
+    margin-inline: auto;
+    max-width: 600px;
+  }
+
+  .action-btn {
+    margin-inline: auto;
+    max-width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  /* Snippet section  */
+  .snippet-primary {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .snippet-section-secondary {
+    padding-left: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .snippet-features {
+    flex-basis: 50%;
+    max-width: 400px;
+  }
+
+  .computer-img {
+    margin-left: -5rem;
+  }
+
+  /* access section  */
+  .access-primary {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+  /* Workflow section  */
+
+  .workflow-container {
+    margin-inline: auto;
+    display: flex;
+    gap: 1rem;
+    max-width: 1000px;
+  }
+
+  .workflow-container > * {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+    align-items: center;
+  }
+
+  /* Firms section  */
+  .firms-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    gap: 3rem;
+    max-width: 1000px;
+  }
+
+  /* Clipboard section  */
+  .clipboard-section {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  /* Footer  */
+  .footer-primary {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+
+  .links {
+    flex: 1;
+    display: flex;
+    text-align: left;
+    margin-right: 5rem;
+    gap: 5rem;
+  }
+
+  .socials li,
+  .social a {
+    display: inline-block;
+    margin-inline: 1rem;
+  }
+}
